@@ -6,20 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>js判断选择表单 | 廿壹韶华|浮生若梦</title>
+  <title>js判断uc浏览器并输出 | 廿壹韶华|浮生若梦</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="手里一个项目需要判断选择表单是否为空，百度了半天没找出来，要么找出来的不符合要求，无奈只好自己写一份。表单样式">
+  <meta name="description" content="在做移动端项目的时候经常遇到浏览器不兼容，尤其是uc浏览器，各种查阅资料找到了一种方法：  document.write(navigator.appVersion);  //获取当前的浏览器 if (navigator.appVersion.indexOf(“UC”)!= -1) //判断是否是uc浏览器 { document.write(“”); }">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js判断选择表单">
-<meta property="og:url" content="http://yoursite.com/2017/07/01/jsxzbd/index.html">
+<meta property="og:title" content="js判断uc浏览器并输出">
+<meta property="og:url" content="http://yoursite.com/2017/07/12/jspd/index.html">
 <meta property="og:site_name" content="廿壹韶华|浮生若梦">
-<meta property="og:description" content="手里一个项目需要判断选择表单是否为空，百度了半天没找出来，要么找出来的不符合要求，无奈只好自己写一份。表单样式">
-<meta property="og:image" content="https://blog.retechs.cn/wp-content/uploads/2017/06/bd.png">
-<meta property="og:updated_time" content="2017-07-01T03:29:53.378Z">
+<meta property="og:description" content="在做移动端项目的时候经常遇到浏览器不兼容，尤其是uc浏览器，各种查阅资料找到了一种方法：  document.write(navigator.appVersion);  //获取当前的浏览器 if (navigator.appVersion.indexOf(“UC”)!= -1) //判断是否是uc浏览器 { document.write(“”); }">
+<meta property="og:updated_time" content="2017-07-12T07:30:09.874Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js判断选择表单">
-<meta name="twitter:description" content="手里一个项目需要判断选择表单是否为空，百度了半天没找出来，要么找出来的不符合要求，无奈只好自己写一份。表单样式">
-<meta name="twitter:image" content="https://blog.retechs.cn/wp-content/uploads/2017/06/bd.png">
+<meta name="twitter:title" content="js判断uc浏览器并输出">
+<meta name="twitter:description" content="在做移动端项目的时候经常遇到浏览器不兼容，尤其是uc浏览器，各种查阅资料找到了一种方法：  document.write(navigator.appVersion);  //获取当前的浏览器 if (navigator.appVersion.indexOf(“UC”)!= -1) //判断是否是uc浏览器 { document.write(“”); }">
   
     <link rel="alternative" href="/atom.xml" title="廿壹韶华|浮生若梦" type="application/atom+xml">
   
@@ -191,46 +189,34 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-jsxzbd" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-jspd" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      js判断选择表单
+      js判断uc浏览器并输出
     </h1>
   
 
         
-        <a href="/2017/07/01/jsxzbd/" class="archive-article-date">
-  	<time datetime="2017-07-01T03:28:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-01</time>
+        <a href="/2017/07/12/jspd/" class="archive-article-date">
+  	<time datetime="2017-07-12T07:28:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>手里一个项目需要判断选择表单是否为空，百度了半天没找出来，要么找出来的不符合要求，无奈只好自己写一份。<br>表单样式<br><img src="https://blog.retechs.cn/wp-content/uploads/2017/06/bd.png"><br><a id="more"></a><br>代码样式<br> <script type="”text/javascript”"><br>function checkbox()<br>{<br>var str=document.getElementsByName(“xz1”);<br>var str1=document.getElementsByName(“xz2”);<br>var str2=document.getElementsByName(“xz3”);<br>var str3=document.getElementsByName(“xz4”);<br>var str4=document.getElementsByName(“xz5”);<br>var str5=document.getElementsByName(“xz6”);<br>var objarray=str.length;<br>var chestr=””;<br>for (i=0;i<objarray;i++)
+        <p>在做移动端项目的时候经常遇到浏览器不兼容，尤其是uc浏览器，各种查阅资料找到了一种方法：</p>
+<script type="”text/javascript”">
+document.write(navigator.appVersion);  //获取当前的浏览器
+if (navigator.appVersion.indexOf(“UC”)!= -1) //判断是否是uc浏览器
 {
-if(str[i].checked == true)
-{
-chestr+=str[i].value+”,”;
+document.write(“”);
 }
-}
-if(chestr == “”)
-{ 
-alert(“您有未选择的表单，请选择后再提交。”);
-}
-else
-{
-window.location.href=””
-}
-}
-</script></p>
-<p>demo演示:<a href="http://blog.retechs.cn/demo/yjwd/" target="_blank" rel="external">http://blog.retechs.cn/demo/yjwd/</a></p>
-<p>如果您有更好的方法，请留言，大家一起进步。</p>
-
+</script>
       
 
       
@@ -309,7 +295,7 @@ window.location.href=””
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/01/jsxzbd/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/07/12/jspd/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -323,18 +309,9 @@ window.location.href=””
   
 <nav id="article-nav">
   
-    <a href="/2017/07/01/dmfg/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          如何把一张图片ps为动漫风格
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/07/01/postName/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">那一世</div>
+    <a href="/2017/07/04/jh/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">江湖</div>
       <i class="icon-circle-right"></i>
     </a>
   
